@@ -1,0 +1,13 @@
+<h2>Pop Component</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let data of Data">
+    <td>{{ data.name }}</td>
+    <td>{{ data.email }}</td>
+  </tr>
+</table>
+<button mat-button (click)="onClose()">Close</button>
